@@ -1,0 +1,70 @@
+
+.pin{
+    margin: 0px auto;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background: rgb(194, 191, 191);
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    padding: 18px;
+    border-width: 2px;
+    border-color:black;
+    border-style: solid;
+}
+/* .pin-screen{
+    height: 0px;
+    padding: 0px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 50px;
+}
+.pin-screen {
+    text-align: left;
+    font-size: 1rem;
+    margin: 3;
+} */
+.pin-buttons {
+    display: grid;
+    display: grid;
+    grid-template-areas: 
+    "one two three cancel"
+    "four five six clear"
+    "seven eight nine enter"
+    "none zero none none";
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 7px;
+    justify-items: center;
+    border-radius: 2%;
+}
+.btn{
+    text-align: left;
+
+    width: 70px;
+    height: 50px;
+    background: rgb(194, 191, 191);
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 2.5rem;
+    border-radius: 10%;
+    cursor: pointer;
+    user-select: none;
+    border-width: 4px;
+    border-color:black;
+    border-style: double;
+}
+.btn.cancel{
+    vertical-align: top;
+    background-color: red;
+    font-size: 1rem;
+}
+.btn.clear{
+    background-color: yellow;
+    font-size: 1rem;
+}
+.btn.enter{
+    background-color: green;
+    font-size: 1rem;
+}
