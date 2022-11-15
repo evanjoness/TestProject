@@ -1,34 +1,27 @@
-
-let password = '';
-let lastSymbol = password.toString().slice(-1);
-
-function cancel(){
-    password = password.slice(0, -1);
-    let lastSymbol = password.toString().slice(-1);
-    return lastSymbol;
+function num(newNum) {
+    let element = document.getElementById('block-1');
+    let link = document.createElement('a');
+    link.innerHTML = newNum;
+    element.appendChild(link);
 }
 
-function clear(){
-    password='';
-    return password;
+function enter() {
+    let element = document.getElementById('block-1');
+    let link = document.createElement('a');
+    let sum = document.getElementById('block-1').innerText;
+    alert(sum);
+    element.appendChild(link);
 }
 
-function enter(){
-    document.getElementById(canc) = alert(123);
+function remove() {
+    let element = document.getElementById('block-1');
+    element.removeChild(element.lastChild);
 }
-canc.on
-// let finish = false;
 
-
-// function clearAll() {
-//     password = '';
-//     finish = false;
-//     out.textContent = 0;
-//     alert(password);
-// }
-// document.querySelector('.clear').onclick = clearAll;
-
-// // let password = password.slice(0, -1);
-// document.querySelector('.buttons').onclick = (event) => {
-//     if(!event.target.classList.contains('btn')) return;
-// }
+function removeAll() 
+{
+    let element = document.getElementById("block-1");
+    while (element.firstChild) {
+        element.removeChild(element.lastChild);
+    }
+  }
